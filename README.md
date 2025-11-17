@@ -1,6 +1,6 @@
 # NOAA Wind Direction Prediction
 
-A deep learning project for predicting wind direction using NOAA meteorological data with LSTM neural networks.
+A deep learning project for predicting wind direction using NOAA meteorological data with CNN-LSTM recurrent neural networks.
 
 ## Overview
 
@@ -11,6 +11,7 @@ This project implements a multi-class classification model to predict wind direc
 The model employs a stacked LSTM (Long Short-Term Memory) architecture optimized for sequential weather data:
 
 - **Input Layer**: Time-series sequences with 3 timesteps and 11 meteorological features
+- Conv1D Layer: 10 filters, kernel size 3, extracts local temporal patterns from input sequences
 - **LSTM Layers**: 
   - First LSTM layer: 128 units with return sequences
   - Second LSTM layer: 64 units with return sequences  
